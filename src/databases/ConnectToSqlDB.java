@@ -39,6 +39,7 @@ public class ConnectToSqlDB {
         Class.forName(driverClass);
         connect = DriverManager.getConnection(url,userName,password);
         System.out.println("Database is connected");
+        System.out.println();
         return connect;
     }
 
@@ -211,6 +212,7 @@ public class ConnectToSqlDB {
     }
 
     public static void main(String[] args)throws IOException, SQLException, ClassNotFoundException {
+
         List<User> list = readUserProfileFromSqlTable();
         for(User user:list){
             System.out.println(user.getStName() + " " + user.getStID()+ " " + user.getStDOB());
