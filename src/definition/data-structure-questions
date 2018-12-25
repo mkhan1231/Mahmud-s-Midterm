@@ -1,32 +1,183 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-A.
+A. In order to locate and retrieve  data it is required to have data in a structured form.Structured form of data makes
+   retrieval and manipulation easy.
+
 What are the various operations that can be performed on different Data Structures?
+A. 1. Searching
+   2. Sorting
+   3. Insertion
+   4. Deletion
+   5. Merging
+   6. Traversing
+
 List out the areas in which data structures are applied extensively?
+A. 1. Compiler Design,
+   2. Operating System,
+   3. Database Management System,
+   4. Statistical analysis package,
+   5. Numerical Analysis,
+   6. Graphics,
+   7. Artificial Intelligence,
+   8. Simulation
+
 what is an Array?
+A. An array in programming is a collection of data/value which has index associated with it. An array shall contain
+   similar types of data, an array can be sorted or un sorted.
+
 what is the difference between the Array and ArrayList?
+A. 1. Array length if fixed but arraylist is dynamic.
+   2. Array members are accessed using [], but ArrayList has a set of methods
+      to access elements and modify them as because arraylist is collection of framework in java.
+   3. Array can store primitive variables and objects but arraylist can store only objects.
+
 what is LinkedList?
+A. A linked list is linear data Structure where each element is a separate object which is called
+   node. Each node has data and reference to the next node. Last node has reference to null.
+
 How is an Array different from Linked List?
+A. 1. An array element is having index number, but a node is having reference to next node.
+   2. In array each element is independent, does not have any connection to the other element
+      on the other hand in linked list each node are connected by previous node.
+   3. In Linked list, location or address of elements is stored in the link part of previous
+      element/node. In array, no pointers are used like linked list, so no need of extra space
+      in memory for pointer.
+   4. Linked list consumed extra memory as the link location need to be saved in in the linked
+      part of the previous elements in case of array it is not required.
+
 what is queue?
+A. It is a linear data structure where elements can be accessed on the basis of FIFO.
+
 what is stack?
+A. Stack is linear data structure where elements can be accessed on the basis of LIFO.
+
 what is FIFO and LIFO?
+A. FIFO: First in First out. Example: In Queue data can be accessed by FIFO method.
+   LIFO: Last in First out. Example: In Stack elements can be accessed on the basis of LIFO.
+
 what is the order of complexity?
+A. Assuming the input is of size N, we can say that the algorithm will finish at O(N), O(N^2), O(N^3), O(N*log(N)) etc.
+   This means that it is a certain mathematical expression of the size of the input, and the algorithm finishes between
+   two factors of it. Generally, the smaller the order of complexity of the program's underlying algorithm, the faster
+   it will run and the better it will scale as the input gets larger. Thus, we should often seek more efficient
+   algorithms in order to reduce the order of complexity.
+
 what is the best case to search an element from an array?
+A. Binary search & sorting algorithm.
+
 what is the worst case to search an element from an array?
+A. For an unsorted array, we have to search element by element, until the element is found or array is completely
+   traversed. Element can be at 1st position, the last position or somewhere in between. The worst case arises when
+   the element is at last position or not in the array, therefore we have to traverse the whole array giving n no.
+   of repetitions over loop. Therefore the worst case time complexity is O(n).
+
 what is tree in data structure?
+A. A tree is a nonlinear data structure whereas arrays, linked lists, stacks and queues are linear data structures.
+   It can be empty of nodes or a tree can be a structure consisting of one node called the root and zero or one or more
+   sub-trees.
+
 what is graph in data structure?
+A. A Graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as
+   vertices and the edges are lines or arcs that connect any two nodes in the graph. For example, in Facebook,
+   each person is represented with a vertex(or node). Each node is a structure and contains information like
+   person id, name, gender, locale etc.
+
 what is the difference between the HashTable and HashMap?
+A. HashTable is synchronized, HashMap is not. Therefore it makes HashMap efficient with non-threaded applications
+   because unsynchronized objects perform better than synchronized objects. HashTable do not allow null keys or values
+   where HashMap does allow one null key and unlimited null values.
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+A. 1. RDBMS - Array
+   2. Network data model - Graph
+   3. Hierarchical data model - Trees
+
 How HashMap works in java?
+A. A HashMap element has key and value in Java, elements are stored against a key. Map Interface implemented on HashMap
+   in Java Collection Framework. elements manipulation is easy on the basis of key of the value.
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+A. It is a class in Java API, which extends IndexOutOfBoundException. IndexOutOfBoundsException occur when an array
+   has been accessed with an illegal index. Index either negative or greater than or equal to the size of the array.
+
 What are the different ways of copying an array into another array?
+A. There are mainly four different ways to copy all elements of one array into another array in Java-
+   1. Manually 2. Arrays.copyOf() 3. System.arraycopy() 4. Object.clone()
+
 What is difference between an array and a linked list?
+A. 1. An array element is having index number, but a node is having reference to next node.
+   2. In array each element is independent, does not have any connection to the other element
+      on the other hand in linked list each node are connected by previous node.
+   3. In Linked list, location or address of elements is stored in the link part of previous
+      element/node. In array, no pointers are used like linked list, so no need of extra space
+      in memory for pointer.
+   4. Linked list consumed extra memory as the link location need to be saved in in the linked
+      part of the previous elements in case of array it is not required.
+   5. An array functions by contiguous memory locations allocated at compile time, i.e. at the
+      time of declaration of array. However, a linked list memory is assigned when data is added
+      to it which means at runtime.
+
 What is DFS and BFS?
+A. Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structure.
+   This one starts at the root and explores as far as possible along each branch before backtracking.
+   Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structure.
+   It starts at the tree roots and explores the neighbour nodes first before visiting to the next level of neighbours.
+
 What is Recursion?
+A. It is the process where a method calls itself inside the method. he method which causes recursion is called
+   recursive method.
+
 What are linear and non linear data Structures?
+A. Linear Data Structures: The data structure where data items are organized sequentially or linearly where data
+   elements attached one after another is called linear data structure.
+   Examples of linear data structures are Arrays, Stack, Queue and Linked List.
+   Non Linear Data Structures: The data structure where data items are not organized sequentially is called non
+   linear data structure. Examples of non linear data structures are Trees and Graphs.
+
 What is Big-(O)-notation?
+A. Big O notation is used in Computer Science to describe the performance or complexity of an algorithm. Big O
+   specifically describes the worst-case scenario, and can be used to describe the execution time required (how long
+   an algorithm will take to run) or the space used (e.g. in memory or on disk) by an algorithm.
+
 Outlined different kind of sorting algorithm with time complexity?
+A. 1. Bubble sort: It is a comparison algorithm. It works by repeatedly stepping
+   through the list to be sorted, comparing each pair of adjacent items and swapping them
+   if they are in the wrong order. The pass through the list is repeated until no swaps are
+   needed, which indicates that the list is sorted.
+   Worst case performance: O(n2)
+   Best case performance: O(n)
+   Average case performance: O(n2)
+   Worst case space complexity: O(n) total, O(1) auxiliary
+   Bubble sort is not a practical sorting algorithm when n is large.
+
+   2.Selection sort: It is an in-place comparison sort.Selection sort is noted for its simplicity,
+   and also has performance advantages over more complicated algorithms in certain situations.
+   Worst case performance: O(n2)
+   Best case performance: O(n2)
+   Average case performance: O(n2)
+   Worst case space complexity: O(n) total, O(1) auxiliary
+
+   3.Insertion sort: It is a comparison sort in which the sorted array (or list) is built one entry
+   at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort,
+   heapsort, or merge sort.
+   Worst case performance: O(n2)
+   Best case performance: O(n)
+   Average case performance: O(n2)
+   Worst case space complexity: O(n) total, O(1) auxiliary
+
+   4. Merge sort: It is an O(n log n) comparison-based sorting algorithm.
+   Worst case performance: O(n log n)
+   Best case performance: O(n log n) typical
+   Average case performance: O(n log n)
+   Worst case space complexity: O(n) total, O(n) auxiliary
+
+   5.Quick sort: It is similar to merge sort in many ways. It divides the elements to be sorted into
+   two groups, sorts the two groups by recursive calls, and combines the two sorted groups into
+   a single array of sorted values.
+   The choice of a good pivot element is critical to the efficiency of the quicksort algorithm.
+   If we can ensure that the pivot element is near the median of the array values, then quicksort is very efficient.
+   on average, makes O(n log n) comparisons to sort n items, in the worst case, it makes O(n2) comparisons
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
@@ -34,4 +185,22 @@ Draw a table with time complexity in which it will summarize all the data struct
   c)In terms of Searching element.
   d)In terms of Removing element.
 
+                                      Common Data Structure Operations
 
+  Data Structure	    Time Complexity
+                      Average	                                        Worst
+                      Access	    Search	    Insertion	Deletion	Access	    Search	    Insertion	Deletion
+  Array	               Θ(1)	       Θ(n)	          Θ(n)	    Θ(n)	    O(1)	    O(n)	    O(n)	    O(n)
+  Stack	               Θ(n)	       Θ(n)	          Θ(1)	    Θ(1)	    O(n)	    O(n)	    O(1)	    O(1)
+  Queue	               Θ(n)	       Θ(n)	          Θ(1)	    Θ(1)	    O(n)	    O(n)	    O(1)	    O(1)
+  Singly-Linked List   Θ(n)	       Θ(n)	          Θ(1)	    Θ(1)	    O(n)	    O(n)	    O(1)	    O(1)
+  Doubly-Linked List   Θ(n)	       Θ(n)	          Θ(1)	    Θ(1)	    O(n)	    O(n)	    O(1)	    O(1)
+  Skip List	          Θ(log(n))	  Θ(log(n))	    Θ(log(n))	Θ(log(n))	O(n)	    O(n)	    O(n)	    O(n)
+  Hash Table	       N/A	       Θ(1)	          Θ(1)	    Θ(1)	    N/A	        O(n)	    O(n)	    O(n)
+  Binary Search Tree  Θ(log(n))    Θ(log(n))	Θ(log(n))	Θ(log(n))	O(n)	    O(n)	    O(n)	    O(n)
+  Cartesian Tree	   N/A	       Θ(log(n))	Θ(log(n))	Θ(log(n))	N/A	        O(n)	    O(n)	    O(n)
+  B-Tree	          Θ(log(n))   Θ(log(n))	    Θ(log(n))	Θ(log(n))	O(log(n))	O(log(n))	O(log(n))	O(log(n))
+  Red-Black Tree	  Θ(log(n))   Θ(log(n))	    Θ(log(n))	Θ(log(n))	O(log(n))	O(log(n))	O(log(n))	O(log(n))
+  Splay Tree	       N/A	       Θ(log(n))	Θ(log(n))	Θ(log(n))	N/A	        O(log(n))	O(log(n))	O(log(n))
+  AVL Tree	          Θ(log(n))	  Θ(log(n))	    Θ(log(n))	Θ(log(n))	O(log(n))	O(log(n))	O(log(n))	O(log(n))
+  KD Tree 	          Θ(log(n))	  Θ(log(n))	    Θ(log(n))	Θ(log(n))	O(n)	    O(n)	    O(n)	    O(n)

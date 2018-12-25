@@ -14,7 +14,6 @@ public class Pattern {
 		int num1 = 1;
 		int num2 = 100;
 		int num3 = 0;
-		int num4=0;
 		int[] a = new int[40];
 
 		while (num2 > 0) {

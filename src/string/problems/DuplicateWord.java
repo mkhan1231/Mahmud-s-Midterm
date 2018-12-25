@@ -13,16 +13,50 @@ public class DuplicateWord {
          */
 
         String st = "Java is a programming Language. Java is also an Island of Indonesia. Java is widely used language";
+        st = st.replaceAll("\\.", "");
+        st=st.toUpperCase();
+        double d;
 
-        List<String> list = Arrays.asList(st.split(" "));
 
-        Set<String> words = new HashSet<String>(list);
-        for (String word : words) {
-            //System.out.println(word+ ":"+Collections.frequency(list, word));
+        String str1[]=st.split(" ");
+        System.out.println(Arrays.toString(str1));
+        System.out.println(str1[0].length());
+
+        HashMap<String, Integer> uniques = new HashMap<String, Integer>();
+        for (String word : str1)
+        {
+            // ignore words 1 or less characters long
+            if (word.length() <= 1)
+            {
+                continue;
+            }
+            // add or update the word occurrence count
+            Integer existingCount = uniques.get(word);
+            uniques.put(word, (existingCount == null ? 1 : (existingCount + 1)));
         }
-        if(Collections.frequency(list,words)>1){
-            System.out.println();
+
+        Set<Map.Entry<String, Integer>> uniqueSet = uniques.entrySet();
+        boolean first = true;
+        for (Map.Entry<String, Integer> entry : uniqueSet)
+        {
+            if (entry.getValue() > 1)
+            {
+                System.out.println((entry.getKey()+" = "+ entry.getValue()));
+                first = false;
+            }
         }
+
+        for(int j=0;j<=str1.length-1;j++) {
+
+            System.out.print(str1[j].length());
+
+        }
+
+
+
+
+
+
 
 
 
