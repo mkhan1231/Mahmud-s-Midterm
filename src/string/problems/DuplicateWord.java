@@ -47,10 +47,21 @@ public class DuplicateWord {
         }
 
         for(int j=0;j<=str1.length-1;j++) {
-
             System.out.print(str1[j].length());
-
         }
+        System.out.println();
+
+        int sum = 0;
+        int count = 0;
+
+        for (String str : uniques.keySet()) {
+            if (uniques.get(str) > 0) {
+                sum += str.length();
+                count++;
+            }
+        }
+        d=sum/count;
+        System.out.println("Average: " + d);
 
 
 

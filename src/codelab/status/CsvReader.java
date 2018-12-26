@@ -5,16 +5,19 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
+
+
+
 public class CsvReader {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         /*
          Coma Separated Value(CSV) of your CodeLab status is downloaded and it parsed.
          Based on number of solution you solved, message is generated for you.
          You need to find the average score of the class.
          */
 
-        String csvFilePath = System.getProperty("user.dir") + "/src/codelab/status/roster-file-12-23-2018.csv";
+        String csvFilePath = "/Users/Mahmud Khan/IdeaProjects/MidtermNovember2018/src/codelab/status/roster-file-12-23-2018.csv";
         String line = "";
         String cvsSplitBy = ",";
         BufferedReader br = null;
@@ -31,9 +34,7 @@ public class CsvReader {
                 String[] name = line.split(cvsSplitBy);
                 roster.add(new Trainee(name[5].replace("\"", ""), name[4].replace("\"",
                         ""), Integer.parseInt(name[10])));
-
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -63,6 +64,16 @@ public class CsvReader {
             }
         }
 
+        int totalNumberOfStudents = roster.size();
+        System.out.println("Total number of students of the class : "+totalNumberOfStudents);
+
+        int totalExcerciseSolved=0;
+        for (Trainee trainee: roster) {
+            totalExcerciseSolved=totalExcerciseSolved+trainee.getNumberOfExercisesSolved();
+        }
+        System.out.println("Total Excersize Solved by all students : "+totalExcerciseSolved);
+        double averageScoreOfTheClass=totalExcerciseSolved/totalNumberOfStudents;
+        System.out.println("Average Score of the Class : "+averageScoreOfTheClass);
     }
 
 }
