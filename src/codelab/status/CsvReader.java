@@ -74,6 +74,9 @@ public class CsvReader {
         System.out.println("Total Excersize Solved by all students : "+totalExcerciseSolved);
         double averageScoreOfTheClass=totalExcerciseSolved/totalNumberOfStudents;
         System.out.println("Average Score of the Class : "+averageScoreOfTheClass);
+
+
+
     }
 
 }

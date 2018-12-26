@@ -12,9 +12,10 @@ public class Fibonacci {
         for(int i=2; i < fibCount; i++){
             fib[i] = fib[i-1] + fib[i-2];
         }
-        System.out.println("First 40 fibonacci numbers are shown vertically: ");
+        System.out.println("First 40 fibonacci numbers are : ");
         for(int i=0; i< fibCount; i++){
-            System.out.println(fib[i]);
+            System.out.print(fib[i]+" ");
         }
+        System.out.println();
     }
 }

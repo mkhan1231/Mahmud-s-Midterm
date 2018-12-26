@@ -13,14 +13,32 @@ public class Factorial {
          * Write a java program to find Factorial of a given number using Recursion as well as Iteration.
          *
          */
-        int num = 10;
-        long factorial = 1;
-        for(int i = 1; i <= num; ++i)
-        {
-            factorial = factorial* i;
-        }
-        System.out.println("Factorial of "+num+" is: "+factorial);
+
+        int factorial1 = factRecursion(5);
+        System.out.println("Recursion: Factorial of 5 is: " + factorial1);
+
+        int factorial2=5;
+        System.out.println("Iteration: Factorial of "+factorial2+" is : "+factIteration(factorial2));
     }
 
+    //Finding Factorial by Recursion
+    public static int factRecursion(int n) {
+        int output;
+        if (n == 1) {
+            return 1;
+        }
+        output = factRecursion(n - 1) * n;
+        return output;
     }
+
+    public static int factIteration(int n){
+        int fact=1;
+        for(int i=1; i<=n;i++){
+            fact=fact*i;
+        }
+        return fact;
+    }
+
+
+}
 

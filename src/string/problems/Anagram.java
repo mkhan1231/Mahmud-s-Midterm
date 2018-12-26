@@ -13,7 +13,6 @@ public class Anagram {
         String x="Army";
         String y="Mary";
         System.out.println("Strin x and String y are Anagram : "+checkAnagram(x,y));
-
     }
 
     public static boolean checkAnagram(String str1, String str2){
