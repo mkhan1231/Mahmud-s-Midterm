@@ -204,15 +204,6 @@ public class Sort {
     }
 
 
-   /* public int [] bucketSort(int [] array){
-        int [] list = array;
-        //implement here
-        
-        
-
-        return list;
-    }*/
-
     public int[] bucketSort(int[] arrays, int max_value)    {
 
         int[] Bucket = new int[max_value + 1];
@@ -250,9 +241,6 @@ public class Sort {
                 array[j] = temp;
             }
         }
-        //return 0;
-
-
 
         return list;
     }
