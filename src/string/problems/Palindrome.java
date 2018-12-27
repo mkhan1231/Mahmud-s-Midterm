@@ -8,9 +8,9 @@ public class Palindrome {
           If a String is reversed and it remains unchanged, that is called Palindrome. For example, MOM,DAD,MADAM are
           Palindrome. So write java code to check if a given String is Palindrome or not.
          */
-        String str3 = "MADAM";
+        String str3 = "ABBA";
         if (palindromeChecking(str3)) {
-            System.out.println(str3+ "is Palindrome");
+            System.out.println(str3+ " is Palindrome");
         }
         else {
             System.out.println(str3+" is not Palindrome");

@@ -17,7 +17,6 @@ public class DuplicateWord {
         st=st.toUpperCase();
         double d;
 
-
         String str1[]=st.split(" ");
         System.out.println(Arrays.toString(str1));
         System.out.println(str1[0].length());
@@ -47,7 +46,7 @@ public class DuplicateWord {
         }
 
         for(int j=0;j<=str1.length-1;j++) {
-            System.out.print(str1[j].length());
+            System.out.print(str1[j].length()+" ");
         }
         System.out.println();
 
@@ -62,15 +61,5 @@ public class DuplicateWord {
         }
         d=sum/count;
         System.out.println("Average: " + d);
-
-
-
-
-
-
-
-
-
     }
-
 }
