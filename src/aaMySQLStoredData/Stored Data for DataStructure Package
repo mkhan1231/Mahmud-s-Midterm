@@ -1,0 +1,35 @@
+6 rows in set (0.00 sec)
+
+mysql> select*from tbl_arraylist;
++----+---------------------+
+| ID | column_lowestNumber |
++----+---------------------+
+|  1 |                  14 |
+|  2 |                  17 |
+|  3 |                  24 |
+|  4 |                  37 |
+|  5 |                  60 |
+|  6 |                  74 |
+|  7 |                  79 |
+|  8 |                  80 |
++----+---------------------+
+8 rows in set (0.12 sec)
+
+mysql> select*from tbl_map;
++----+------------+------------+
+| ID | mapKey     | mapValue   |
++----+------------+------------+
+|  1 | Bangladesh | Dhk        |
+|  2 | Bangladesh | Ctg        |
+|  3 | Bangladesh | Khl        |
+|  4 | Pakistan   | Islamabad  |
+|  5 | Pakistan   | Karachi    |
+|  6 | Pakistan   | Rawalpindi |
+|  7 | India      | Chennai    |
+|  8 | India      | Mumbai     |
+|  9 | India      | Delhi      |
++----+------------+------------+
+9 rows in set (0.12 sec)
+
+mysql>
+

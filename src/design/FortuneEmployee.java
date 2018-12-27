@@ -92,16 +92,12 @@ public class FortuneEmployee {
 					list1.add(obj.toString());
 					connectToSqlDB.InsertDataFromArrayListToMySql(list1, "employee_record", "employee_id", "employee_info");
 				}
-
 			}
-
 
 		System.out.println("Reading from database");
 		List<String> empRec = connectToSqlDB.readDataBase("employee_record", "employee_id", "employee_info");
 		for (String emp : empRec) {
 			System.out.println(emp);
 		}
-
 	}
-
 }

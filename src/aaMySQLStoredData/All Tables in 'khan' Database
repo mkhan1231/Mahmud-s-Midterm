@@ -1,0 +1,70 @@
+Enter password: *********
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 771
+Server version: 8.0.13 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| employees          |
+| information_schema |
+| khan               |
+| mahmud             |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
+| zaytuna            |
++--------------------+
+10 rows in set (0.00 sec)
+
+mysql> use khan;
+Database changed
+mysql> show tables;
++--------------------+
+| Tables_in_khan     |
++--------------------+
+| bubble_sort        |
+| bucket_sort        |
+| customers          |
+| employee_record    |
+| heap_sort          |
+| insertion_sort     |
+| merge_sort         |
+| qtp                |
+| quick_sort         |
+| selection_sort     |
+| selenium           |
+| selfdrivingcar     |
+| shell_sort         |
+| students           |
+| tbl_arraylist      |
+| tbl_json1          |
+| tbl_json2          |
+| tbl_json3          |
+| tbl_json4          |
+| tbl_json5          |
+| tbl_json6          |
+| tbl_json7          |
+| tbl_json8          |
+| tbl_json9          |
+| tbl_lowestnumber   |
+| tbl_map            |
+| tbl_primenumber    |
+| tbl_qtp            |
+| tbl_selenium       |
+| tbl_selfdrivingcar |
++--------------------+
+30 rows in set (0.00 sec)
+
+mysql>

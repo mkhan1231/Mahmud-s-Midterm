@@ -1,0 +1,14 @@
+mysql> select*from students;
++-----------------+-------+-------------------+
+| stName          | stId  | stDOB             |
++-----------------+-------+-------------------+
+| Mahmud Khan     | 10001 | December-31, 1985 |
+| Henry Hudson    | 10002 | June-04, 1992     |
+| Mike Linke      | 10003 | February-18, 1989 |
+| Jason Lane      | 10004 | March-21, 1983    |
+| Cathy Anderson  | 10005 | December-22, 1988 |
+| Marina Baltaeva | 10006 | April-17, 1980    |
++-----------------+-------+-------------------+
+6 rows in set (0.00 sec)
+
+mysql>

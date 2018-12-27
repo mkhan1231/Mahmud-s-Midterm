@@ -1,0 +1,25 @@
+mysql> select*from tbl_qtp;
++----+--------+----------------------------------------+
+| ID | mapKey | mapValue                               |
++----+--------+----------------------------------------+
+|  1 | qtp    | Student(id= 1)Zabed Khan  Grade = A    |
+|  2 | qtp    | Student(id= 2)Mohammad Miah  Grade = C |
+|  3 | qtp    | Student(id= 3)Apurba "Shah"  Grade = B |
+|  4 | qtp    | Student(id= 4)Ishrat Eva  Grade = B    |
+|  5 | qtp    | Student(id= 5)Savin "Chow"  Grade = A  |
++----+--------+----------------------------------------+
+5 rows in set (0.12 sec)
+
+mysql> select*from tbl_Selenium;
++----+--------+----------------------------------------+
+| ID | mapKey | mapValue                               |
++----+--------+----------------------------------------+
+|  1 | sel    | Student(id= 1)Ibrahim Khan  Grade = B  |
+|  2 | sel    | Student(id= 2)Asif Roni  Grade = A     |
+|  3 | sel    | Student(id= 3)Gumani Hose  Grade = A   |
+|  4 | sel    | Student(id= 4)Sukanto Shaha  Grade = B |
+|  5 | sel    | Student(id= 5)MD Hossain  Grade = C    |
++----+--------+----------------------------------------+
+5 rows in set (0.02 sec)
+
+mysql>

@@ -1,0 +1,156 @@
+mysql> select*from tbl_json1;
++----+-------+
+| ID | data  |
++----+-------+
+|  1 | "cnn" |
+|  2 | "cnn" |
+|  3 | "cnn" |
+|  4 | "cnn" |
+|  5 | "cnn" |
+|  6 | "cnn" |
+|  7 | "cnn" |
+|  8 | "cnn" |
+|  9 | "cnn" |
+| 10 | "cnn" |
++----+-------+
+10 rows in set (0.12 sec)
+
+mysql> select*from json2;
+ERROR 1146 (42S02): Table 'khan.json2' doesn't exist
+mysql> select*from tbl_json2;
++----+-------+
+| ID | data  |
++----+-------+
+|  1 | "CNN" |
+|  2 | "CNN" |
+|  3 | "CNN" |
+|  4 | "CNN" |
+|  5 | "CNN" |
+|  6 | "CNN" |
+|  7 | "CNN" |
+|  8 | "CNN" |
+|  9 | "CNN" |
+| 10 | "CNN" |
++----+-------+
+10 rows in set (0.13 sec)
+
+mysql> select*from tbl_json3;
++----+-----------------------------------------------+
+| ID | data                                          |
++----+-----------------------------------------------+
+|  1 | "Eli Watkins, CNN"                            |
+|  2 | null                                          |
+|  3 | null                                          |
+|  4 | "Annie Grayer, CNN"                           |
+|  5 | "Kevin Liptak, CNN"                           |
+|  6 | "Dan Merica, CNN"                             |
+|  7 | "Veronica Stracqualursi, CNN"                 |
+|  8 | "Kevin Liptak, CNN"                           |
+|  9 | "Peter Bergen, CNN National Security Analyst" |
+| 10 | "Barbara Starr, CNN Pentagon Correspondent"   |
++----+-----------------------------------------------+
+10 rows in set (0.11 sec)
+
+mysql> select*from tbl_json4;
++----+-------------------------------------------------------------------------------------------------------+
+| ID | data                                                                                                  |
++----+-------------------------------------------------------------------------------------------------------+
+|  1 | "Flynn asks judge for permission to go to Rhode Island as sentencing looms"                           |
+|  2 | "In photos: President Trump's holiday visit to US troops in Iraq"                                     |
+|  3 | "Trump, first lady make surprise visit to Iraq - CNN Video"                                           |
+|  4 | "Mark Meadows says Trump is still 'very firm' on wall as shutdown drags on"                           |
+|  5 | "President and first lady make surprise visit to Iraq"                                                |
+|  6 | "Democrats have 2020 decisions to make as they enter the new year"                                    |
+|  7 | "Trump's acting secretary of defense will step into role with no foreign policy, military experience" |
+|  8 | "Trump's message on Christmas Day: 'It's a disgrace'"                                                 |
+|  9 | "The man who said Emperor Trump has no clothes"                                                       |
+| 10 | "After the shock of Mattis' resignation, some see a different narrative"                              |
++----+-------------------------------------------------------------------------------------------------------+
+10 rows in set (0.02 sec)
+
+mysql> select*from tbl_json5;
++----+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ID | data                                                                                                                                                                                                                                                              |
++----+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|  1 | "Former national security adviser Michael Flynn asked a federal judge on Wednesday to allow him to stay in Rhode Island as well as Washington, DC, and to travel between the two before he is sentenced."                                                         |
+|  2 | "President Trump and the first lady made a surprise holiday visit it US troops in Iraq on Wednesday, December 26."                                                                                                                                                |
+|  3 | "President Donald Trump and first lady Melania Trump quietly swept into Iraq to pay a holiday visit to US troops, making good on the President's promise to travel to one of the American war zones he has derided as costly blunders."                           |
+|  4 | "House Freedom Caucus Chairman Mark Meadows, one of President Donald Trump's closest allies, on Wednesday described Trump's resolve to hold out for $5 billion in border wall funding as \"very firm\" as the partial government shutdown entered its fifth day." |
+|  5 | "President Donald Trump and first lady Melania Trump quietly swept into Iraq Wednesday to pay a holiday visit to US troops, making good on the President's promise to travel to one of the American war zones he has derided as costly blunders."                 |
+|  6 | "Ask any Democrat considering running for president in 2020 about their decision-making process and most will draw a line between 2018 -- when it is far too early to decide -- and 2019 -- when the timing is just right."                                       |
+|  7 | "With Defense Secretary James Mattis on his way out two months earlier than planned, Deputy Defense Secretary Patrick Shanahan will take the reins of the government's largest and most complex agency with no military and foreign policy experience."           |
+|  8 | "In President Donald Trump's Christmas Day telling, the drugs are flowing over the border, the Federal Reserve is imperiling the economy and the Democrats are preparing to harass him with oversight requests."                                                  |
+|  9 | "Few who work at senior levels in the administration of President Donald Trump leave with their reputations unsullied. James Mattis is one of the few, Peter Bergen writes."                                                                                      |
+| 10 | "Gen. James Mattis' resignation triggered an outpouring of anxiety and anger and a steady stream of kudos for the 68-year-old, but as the shock of his departure begins to ebb, another narrative about the \"warrior monk\" is emerging."                        |
++----+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+10 rows in set (0.12 sec)
+
+mysql> select*from tbl_json6;
++----+----------------------------------------------------------------------------------------------------------------+
+| ID | data                                                                                                           |
++----+----------------------------------------------------------------------------------------------------------------+
+|  1 | "http://us.cnn.com/2018/12/26/politics/michael-flynn-sentencing-release/index.html"                            |
+|  2 | "http://us.cnn.com/2018/12/26/politics/gallery/trump-surprise-visit-iraq/index.html"                           |
+|  3 | "http://us.cnn.com/videos/politics/2018/12/26/donald-melania-trump-iraq-visit-troops-vinograd-sot-nr-vpx.cnn"  |
+|  4 | "http://us.cnn.com/2018/12/26/politics/mark-meadow-shutdown-trump-cnntv/index.html"                            |
+|  5 | "http://us.cnn.com/2018/12/26/politics/donald-trump-iraq-visit/index.html"                                     |
+|  6 | "http://us.cnn.com/2018/12/26/politics/democrats-2019-decisions/index.html"                                    |
+|  7 | "http://us.cnn.com/2018/12/24/politics/who-is-patrick-shanahan-acting-defense-department-secretary/index.html" |
+|  8 | "http://us.cnn.com/2018/12/25/politics/trump-oval-office-christmas/index.html"                                 |
+|  9 | "http://us.cnn.com/2018/12/23/opinions/the-man-who-said-emperor-trump-has-no-clothes-mattis-bergen/index.html" |
+| 10 | "http://us.cnn.com/2018/12/24/politics/mattis-resignation-narrative/index.html"                                |
++----+----------------------------------------------------------------------------------------------------------------+
+10 rows in set (0.11 sec)
+
+mysql> select*from tbl_json7;
++----+--------------------------------------------------------------------------------------------------------+
+| ID | data                                                                                                   |
++----+--------------------------------------------------------------------------------------------------------+
+|  1 | "https://cdn.cnn.com/cnnnext/dam/assets/181218125754-05-michael-flynn-sentencing-1218-super-tease.jpg" |
+|  2 | "https://cdn.cnn.com/cnnnext/dam/assets/181226150143-01-trump-in-iraq-1226-super-tease.jpg"            |
+|  3 | "https://cdn.cnn.com/cnnnext/dam/assets/181226142342-03-trump-iraq-1226-super-tease.jpg"               |
+|  4 | "https://cdn.cnn.com/cnnnext/dam/assets/180118173618-mark-meadows-tsr-super-tease.jpg"                 |
+|  5 | "https://cdn.cnn.com/cnnnext/dam/assets/181226142103-01-trump-iraq-1226-super-tease.jpg"               |
+|  6 | "https://cdn.cnn.com/cnnnext/dam/assets/181007092605-potential-2020-democrats-super-tease.jpg"         |
+|  7 | "https://cdn.cnn.com/cnnnext/dam/assets/181224125327-patrick-shanahan-super-tease.jpg"                 |
+|  8 | "https://cdn.cnn.com/cnnnext/dam/assets/181225104619-01-trump-1225-super-tease.jpg"                    |
+|  9 | "https://cdn.cnn.com/cnnnext/dam/assets/181221085713-03-trump-mattis-lead-image-super-tease.jpg"       |
+| 10 | "https://cdn.cnn.com/cnnnext/dam/assets/181221085508-02-trump-mattis-lead-image-super-tease.jpg"       |
++----+--------------------------------------------------------------------------------------------------------+
+10 rows in set (0.13 sec)
+
+mysql> select*from tbl_json8;
++----+--------------------------------+
+| ID | data                           |
++----+--------------------------------+
+|  1 | "2018-12-26T21:34:32Z"         |
+|  2 | "2018-12-26T20:37:14Z"         |
+|  3 | "2018-12-26T20:22:57.6758619Z" |
+|  4 | "2018-12-26T20:20:57Z"         |
+|  5 | "2018-12-26T19:33:54Z"         |
+|  6 | "2018-12-26T11:18:46Z"         |
+|  7 | "2018-12-26T02:24:15Z"         |
+|  8 | "2018-12-25T19:24:22Z"         |
+|  9 | "2018-12-25T01:41:08Z"         |
+| 10 | "2018-12-25T00:24:25Z"         |
++----+--------------------------------+
+10 rows in set (0.04 sec)
+
+mysql> select*from tbl_json9;
++----+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ID | data                                                                                                                                                                                                                                                                                   |
++----+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|  1 | "(CNN) Former national security adviser Michael Flynn asked a federal judge on Wednesday to allow him to stay in Rhode Island as well as Washington, DC, and to travel between the two before he is sentenced. Judge Emmet Sullivan postponed Flynn's sentencing ear? [+1384 chars]"   |
+|  2 | null                                                                                                                                                                                                                                                                                   |
+|  3 | "Chat with us in Facebook Messenger. Find out what's happening in the world as it unfolds."                                                                                                                                                                                            |
+|  4 | "(CNN) House Freedom Caucus Chairman Mark Meadows, one of President Donald Trump's closest allies, on Wednesday described Trump's resolve to hold out for $5 billion in border wall funding as \"very firm\" as the partial government shutdown entered its fifth day.? [+1899 chars]" |
+|  5 | "(CNN) President Donald Trump and first lady Melania Trump quietly swept into Iraq Wednesday to pay a holiday visit to US troops, making good on the President's promise to travel to one of the American war zones he has derided as costly blunders. After a secre? [+4302 chars]"   |
+|  6 | "(CNN) Ask any Democrat considering running for president in 2020 about their decision-making process and most will draw a line between 2018 -- when it is far too early to decide -- and 2019 -- when the timing is just right. A few Democrats haven't waited. Rep? [+9242 chars]"   |
+|  7 | "Washington (CNN) With Defense Secretary James Mattis on his way out two months earlier than planned, Deputy Defense Secretary Patrick Shanahan will take the reins of the government's largest and most complex agency with no military and foreign policy experien? [+3840 chars]"   |
+|  8 | "(CNN) In President Donald Trump's Christmas Day telling, the drugs are flowing over the border, the Federal Reserve is imperiling the economy and the Democrats are preparing to harass him with oversight requests. \"It's a disgrace, what's happening in our coun? [+5019 chars]"  |
+|  9 | "Peter Bergen is CNN's national security analyst, a vice president at New America, and a professor of practice at Arizona State University. He is writing a book for Penguin/Random House about the Trump administration's national security team and its policies. ? [+13771 chars]"  |
+| 10 | null                                                                                                                                                                                                                                                                                   |
++----+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+10 rows in set (0.11 sec)
+
+mysql>

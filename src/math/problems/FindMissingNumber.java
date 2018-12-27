@@ -18,6 +18,8 @@ public class FindMissingNumber {
         System.out.println("The Missing Number is: "+missingNum);
     }
 
+
+    //Static Helper method to calculate Missing number
     static int pickMissingNum (int a[], int n)
     {
         int total;

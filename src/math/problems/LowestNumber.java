@@ -32,7 +32,6 @@ public class LowestNumber {
 
 		}
 
-
 	}
 
 	public static int lowest(int[] array) {

@@ -1,11 +1,14 @@
 package math.problems;
 
+import java.util.ArrayList;
+
 public class Fibonacci {
     public static void main(String[] args) {
          /*
           Write 40 Fibonacci numbers with java.
          */
-        int fibCount = 40;
+
+    int fibCount = 40;
         int[] fib = new int[fibCount];
         fib[0] = 0;
         fib[1] = 1;
@@ -14,7 +17,7 @@ public class Fibonacci {
         }
         System.out.println("First 40 fibonacci numbers are : ");
         for(int i=0; i< fibCount; i++){
-            System.out.print(fib[i]+" ");
+        System.out.print(fib[i]+" ");
         }
         System.out.println();
     }
