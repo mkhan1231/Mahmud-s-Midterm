@@ -1,17 +1,23 @@
 package databases;
-import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.lang.ClassNotFoundException;
+
 
 public class UnitTestConnectDB {
-    public static void main(String[] args) throws IOException, SQLException, ClassNotFoundException{
-        ConnectToSqlDB con = new ConnectToSqlDB();
-        Connection resultConnection=con.connectToSqlDatabase();
-        //Assert.assertEquals(resultConnection,
+    @Test
+    public void connectionTest() {
 
+        try {
+            ConnectToSqlDB.connectToSqlDatabase();
+            System.out.println("mysql database connected successfully.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }

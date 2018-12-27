@@ -279,6 +279,26 @@ public class ConnectToSqlDB {
 
     }
 
+    public void insertDataFromArrayListToSqlTable_1(List<Integer> list, String tableName, String columnName) {
+        try {
+            connectToSqlDatabase();
+
+            for (Integer st : list) {
+                ps = connect.prepareStatement("INSERT INTO " + tableName + " ( " + columnName + " ) VALUES(?)");
+                ps.setObject(1, st);
+                ps.executeUpdate();
+            }
+            System.out.println("Database: " + ps);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void createTableFromStringToMySql(String tableName, String columnName1,String columnName2){
         try {
             connectToSqlDatabase();

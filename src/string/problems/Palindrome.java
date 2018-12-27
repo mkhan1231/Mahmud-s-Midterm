@@ -8,20 +8,30 @@ public class Palindrome {
           If a String is reversed and it remains unchanged, that is called Palindrome. For example, MOM,DAD,MADAM are
           Palindrome. So write java code to check if a given String is Palindrome or not.
          */
-        String str1;
-        String str2 ="";
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a string:");
-        str1 = sc.nextLine();
+        String str3 = "MADAM";
+        if (palindromeChecking(str3)) {
+            System.out.println(str3+ "is Palindrome");
+        }
+        else {
+            System.out.println(str3+" is not Palindrome");
+        }
+    }
 
-        int length = str1.length();
-        for ( int i = length - 1; i >= 0; i-- )
-            str2 = str2 + str1.charAt(i);
 
-        if (str1.equals(str2))
-            System.out.println(str1+" is a palindrome");
-        else
-            System.out.println(str1+" is not a palindrome");
+    public static boolean palindromeChecking(String str1) {
 
+        String word = str1;
+        StringBuilder str2 = new StringBuilder();
+        int wordLength = word.length();
+
+        for (int i = 0; i < wordLength; i++) {
+            str2.append(word.charAt(wordLength - 1 - i));
+        }
+        String revPalindrome = new String(str2);
+
+        if (word.matches(revPalindrome))
+            return true;
+        else return false;
     }
 }
+

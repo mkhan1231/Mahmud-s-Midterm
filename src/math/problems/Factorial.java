@@ -21,7 +21,7 @@ public class Factorial {
         System.out.println("Iteration: Factorial of "+factorial2+" is : "+factIteration(factorial2));
     }
 
-    //Finding Factorial by Recursion
+    //Method for finding Factorial by Recursion
     public static int factRecursion(int n) {
         int output;
         if (n == 1) {
@@ -31,6 +31,7 @@ public class Factorial {
         return output;
     }
 
+    //Method for finding Factorial by Iteration
     public static int factIteration(int n){
         int fact=1;
         for(int i=1; i<=n;i++){

@@ -18,9 +18,12 @@ public class PrimeNumber {
 		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
 		 *
 		 */
-		//To avoid processing time, the upper range was put as 10000
+
+
+		//To minimize the processing time, the upper range was put as 10000
+
 		System.out.println("\f");
-		int [ ] array = new int [1229]; //There are 1229 prime numbers from 2 to 10,000
+		int [ ] array = new int [1229]; //There are 1229 prime numbers from 2 to 10000
 		int x = 0;
 		int i =2;
 		while(x<1229){
@@ -53,5 +56,6 @@ public class PrimeNumber {
 		if(num%i==0)
 		return false;
 		return true;
+
 	}
 }

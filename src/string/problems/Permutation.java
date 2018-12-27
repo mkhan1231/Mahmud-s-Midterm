@@ -12,7 +12,7 @@ public class Permutation {
          * Write Java program to compute all Permutation of a String
          *
          */
-        String str = "ABC";
+        String str = "ABCD";
         int n = str.length();
         System.out.println("Permutations of ABC are: ");
         Permutation permutation = new Permutation();

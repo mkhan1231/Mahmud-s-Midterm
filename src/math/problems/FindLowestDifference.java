@@ -15,7 +15,7 @@ public class FindLowestDifference {
         int m = array1.length;
         int n = array2.length;
 
-        System.out.println("The Lowest Difference is : "+findSmallestDifference(array1, array2, m, n));
+        System.out.println("The Lowest Difference between cells is : "+findSmallestDifference(array1, array2, m, n));
     }
 
     static int findSmallestDifference(int A[], int B[], int m, int n) {
